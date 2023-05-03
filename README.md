@@ -24,10 +24,10 @@ Usage
 Here's an example of how to use \`checkSwipe.js\`:
 ```javascript
     const swipeRightAction = () => { 
-      //do something 
+      alert("Swiped right with two fingers")
     }
     const swipeLeftAction = () => { 
-      //do something
+      alert("Swiped left with two fingers")
     }
     
     let cs = new checkSwipe(document, 2, swipeRightAction, swipeLeftAction);
