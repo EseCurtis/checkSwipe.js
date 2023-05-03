@@ -23,7 +23,14 @@ Usage
 
 Here's an example of how to use \`checkSwipe.js\`:
 ```javascript
-    let cs = new checkSwipe(document, 2, () => alert("Swiped right with two fingers"), () => alert("Swiped left with two fingers"));
+    const swipeRightAction = () => { 
+      //do something 
+    }
+    const swipeLeftAction = () => { 
+      //do something
+    }
+    
+    let cs = new checkSwipe(document, 2, swipeRightAction, swipeLeftAction);
 ```
 In this example, we're monitoring the entire document for swipe events with at least 2 fingers. When a swipe to the right is detected, an alert will be displayed saying "Swiped right with two fingers", and when a swipe to the left is detected, an alert will be displayed saying "Swiped left with two fingers".
 
